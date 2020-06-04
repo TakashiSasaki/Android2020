@@ -46,11 +46,60 @@
             android:text="@string/cb_food" />
     </LinearLayout>
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/white"
+            android:paddingRight="5dp"
+            android:text="@string/rb_male"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/white"
+            android:paddingRight="5dp"
+            android:text="@string/rb_female"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingRight="5dp"
+            android:text="@string/rb_other"></RadioButton>
+    </RadioGroup>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:entries="@array/sp_currylist"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+    </Spinner>
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bt_save"
-        android:textSize="30sp"/>
+        android:textSize="30sp" />
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/lv_cocktaillist">
 
+    </ListView>
 </LinearLayout>
